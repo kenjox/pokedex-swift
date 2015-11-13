@@ -13,6 +13,11 @@
 		45D04BE61BF4C19300E4A9AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D04BE51BF4C19300E4A9AA /* Assets.xcassets */; };
 		45D04BE91BF4C19300E4A9AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D04BE71BF4C19300E4A9AA /* LaunchScreen.storyboard */; };
 		45D04BF11BF4C58C00E4A9AA /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 45D04BF01BF4C58C00E4A9AA /* pokemon.csv */; };
+		45F054971BF51F5500E2F181 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F054961BF51F5500E2F181 /* Pokemon.swift */; settings = {ASSET_TAGS = (); }; };
+		45F054991BF51F7A00E2F181 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F054981BF51F7A00E2F181 /* PokeCell.swift */; settings = {ASSET_TAGS = (); }; };
+		45F0549E1BF53B9700E2F181 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F0549D1BF53B9700E2F181 /* CSV.swift */; settings = {ASSET_TAGS = (); }; };
+		45F054A01BF5738200E2F181 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45F0549F1BF5738200E2F181 /* pokemon.ttf */; settings = {ASSET_TAGS = (); }; };
+		45F054A21BF5739200E2F181 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45F054A11BF5739200E2F181 /* music.mp3 */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		45D04BE81BF4C19300E4A9AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45D04BEA1BF4C19300E4A9AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45D04BF01BF4C58C00E4A9AA /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		45F054961BF51F5500E2F181 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		45F054981BF51F7A00E2F181 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
+		45F0549D1BF53B9700E2F181 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
+		45F0549F1BF5738200E2F181 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
+		45F054A11BF5739200E2F181 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		45D04BDD1BF4C19200E4A9AA /* pokedex */ = {
 			isa = PBXGroup;
 			children = (
-				45D04BF01BF4C58C00E4A9AA /* pokemon.csv */,
+				45F0549B1BF53B6E00E2F181 /* Util */,
+				45F054941BF51F3200E2F181 /* Model */,
+				45F054951BF51F3E00E2F181 /* View */,
+				45F0549A1BF5277B00E2F181 /* Controller */,
+				45F0549C1BF53B7900E2F181 /* Resources */,
 				45D04BDE1BF4C19200E4A9AA /* AppDelegate.swift */,
-				45D04BE01BF4C19200E4A9AA /* ViewController.swift */,
 				45D04BE21BF4C19200E4A9AA /* Main.storyboard */,
 				45D04BE51BF4C19300E4A9AA /* Assets.xcassets */,
 				45D04BE71BF4C19300E4A9AA /* LaunchScreen.storyboard */,
 				45D04BEA1BF4C19300E4A9AA /* Info.plist */,
 			);
 			path = pokedex;
+			sourceTree = "<group>";
+		};
+		45F054941BF51F3200E2F181 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45F054961BF51F5500E2F181 /* Pokemon.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		45F054951BF51F3E00E2F181 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45F054981BF51F7A00E2F181 /* PokeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		45F0549A1BF5277B00E2F181 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				45D04BE01BF4C19200E4A9AA /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		45F0549B1BF53B6E00E2F181 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				45F0549D1BF53B9700E2F181 /* CSV.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		45F0549C1BF53B7900E2F181 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45F054A11BF5739200E2F181 /* music.mp3 */,
+				45F0549F1BF5738200E2F181 /* pokemon.ttf */,
+				45D04BF01BF4C58C00E4A9AA /* pokemon.csv */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +181,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F054A01BF5738200E2F181 /* pokemon.ttf in Resources */,
 				45D04BE91BF4C19300E4A9AA /* LaunchScreen.storyboard in Resources */,
+				45F054A21BF5739200E2F181 /* music.mp3 in Resources */,
 				45D04BE61BF4C19300E4A9AA /* Assets.xcassets in Resources */,
 				45D04BF11BF4C58C00E4A9AA /* pokemon.csv in Resources */,
 				45D04BE41BF4C19200E4A9AA /* Main.storyboard in Resources */,
@@ -140,8 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F054991BF51F7A00E2F181 /* PokeCell.swift in Sources */,
 				45D04BE11BF4C19200E4A9AA /* ViewController.swift in Sources */,
+				45F0549E1BF53B9700E2F181 /* CSV.swift in Sources */,
 				45D04BDF1BF4C19200E4A9AA /* AppDelegate.swift in Sources */,
+				45F054971BF51F5500E2F181 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = pokedex/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.otis.pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -266,6 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = pokedex/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.otis.pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,6 +353,7 @@
 				45D04BEF1BF4C19300E4A9AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
