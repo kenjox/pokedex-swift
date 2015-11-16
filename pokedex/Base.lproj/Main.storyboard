@@ -9,7 +9,6 @@
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
@@ -21,6 +20,7 @@
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Italic</string>
         </mutableArray>
         <mutableArray key="pokemon.ttf">
@@ -213,6 +213,9 @@
                                             <constraint firstAttribute="width" constant="35" id="GmB-k1-Zo4"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="7NC-SX-6zc" eventType="touchUpInside" id="n72-FU-rMy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -439,10 +442,24 @@
                             <constraint firstItem="5bm-Oq-yao" firstAttribute="leading" secondItem="SfU-Gj-i1C" secondAttribute="leading" id="w8C-Do-0YJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="baseAttackLbl" destination="LGu-zE-HgE" id="Iut-jv-KwB"/>
+                        <outlet property="currentEvoImg" destination="75W-aE-dl6" id="4ug-DP-mtf"/>
+                        <outlet property="defenseLbl" destination="boJ-65-7bn" id="acs-Mh-6on"/>
+                        <outlet property="descriptionLbl" destination="O22-q2-CIu" id="gbW-h3-Abp"/>
+                        <outlet property="heighLbl" destination="75e-XK-Qpf" id="B2G-0s-Gnm"/>
+                        <outlet property="mainImg" destination="cZi-cN-ouh" id="jFB-Rv-lku"/>
+                        <outlet property="nameLbl" destination="aCV-ij-USp" id="ayZ-v7-d48"/>
+                        <outlet property="nextEvoImg" destination="Z10-Td-eUJ" id="GEG-zZ-Sd9"/>
+                        <outlet property="nextEvoLbl" destination="DJQ-81-7Xv" id="BDq-Xj-ZMm"/>
+                        <outlet property="podexIdLbl" destination="PKl-vR-Vuf" id="r1l-JI-IhC"/>
+                        <outlet property="typeLbl" destination="e9G-6t-zrq" id="X4b-Js-XED"/>
+                        <outlet property="weightLbl" destination="9cu-2q-Oqg" id="wkv-hJ-VUW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccr-Eo-jG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="866" y="468"/>
+            <point key="canvasLocation" x="1007" y="429"/>
         </scene>
     </scenes>
     <resources>

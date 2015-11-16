@@ -44,8 +44,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }catch let err as NSError {
             print(err.debugDescription)
         }
-        
-        
     }
     
     func parsePokemonCSV() {
@@ -106,7 +104,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         performSegueWithIdentifier("PokemonDetailVC", sender:poke)
     }
     
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "PokemonDetailVC" {
@@ -120,7 +117,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
-        return CGSize(width: 105, height: 105)
+        return CGSize(width: self.view.frame.size.width / 3, height: 105)
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -130,7 +127,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
         return pokemonArray.count
     }
-    
+        
     
     //UISearchBarDelegate class
     
