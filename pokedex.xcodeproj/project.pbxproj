@@ -18,6 +18,7 @@
 		45F0549E1BF53B9700E2F181 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F0549D1BF53B9700E2F181 /* CSV.swift */; settings = {ASSET_TAGS = (); }; };
 		45F054A01BF5738200E2F181 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45F0549F1BF5738200E2F181 /* pokemon.ttf */; settings = {ASSET_TAGS = (); }; };
 		45F054A21BF5739200E2F181 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45F054A11BF5739200E2F181 /* music.mp3 */; settings = {ASSET_TAGS = (); }; };
+		45F054A41BF5F92800E2F181 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F054A31BF5F92800E2F181 /* PokemonDetailVC.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		45F0549D1BF53B9700E2F181 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
 		45F0549F1BF5738200E2F181 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
 		45F054A11BF5739200E2F181 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		45F054A31BF5F92800E2F181 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				45D04BE01BF4C19200E4A9AA /* ViewController.swift */,
+				45F054A31BF5F92800E2F181 /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				45F054991BF51F7A00E2F181 /* PokeCell.swift in Sources */,
 				45D04BE11BF4C19200E4A9AA /* ViewController.swift in Sources */,
 				45F0549E1BF53B9700E2F181 /* CSV.swift in Sources */,
+				45F054A41BF5F92800E2F181 /* PokemonDetailVC.swift in Sources */,
 				45D04BDF1BF4C19200E4A9AA /* AppDelegate.swift in Sources */,
 				45F054971BF51F5500E2F181 /* Pokemon.swift in Sources */,
 			);
